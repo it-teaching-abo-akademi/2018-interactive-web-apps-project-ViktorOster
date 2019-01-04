@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.top {
+  float: top;
+}
+.portfolios-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /* font-family: "Lato", sans-serif; */
+  /* font-family: sans-serif; */
+  margin: 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* font-size: 11pt; */
+}
+.portfolio {
+  float: left;
+  border: 1px solid black;
+  width: 580px;
+  margin: 10px 10px;
+  padding: 10px;
+  background: white;
+  border: none;
+  font-weight: 400;
+}
+
+.button-add-portfolio {
+  margin-right: 100%;
+  float: left;
+}
+.button.button-stockInfo {
+  box-shadow: none;
+  border: none;
+  border: 1px solid #888;
+}
+
+.button {
+  /* background-image: linear-gradient(#f6f6f7, #e1e1e1); */
+  background: white;
+  cursor: pointer;
+
+  /* font-weight: bold;
+  font-size: 11pt; */
+
+  /* line-height: normal; */
+
+  /* padding: 0; */
+  min-height: 30px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+
+  transition: background-color 75ms linear;
+  /* box-shadow: 3px 3px; */
+}
+.button:hover {
+  background: #eee;
+  transition: background-color 75ms linear;
+}
+.input-text {
+  width: 200px;
+  /* float: left; */
+}
+.stocks-container-full {
+  border: 1px solid #ddd;
+}
+.stock {
+  /* border: 1px solid black; */
+
+  text-align: center;
+  /* margin: 0 10px; */
+  display: grid;
+  grid-template-columns: 0.9fr 0.7fr 1fr 1.2fr 0.6fr;
+  transition: background-color 60ms linear;
+}
+.stock:nth-child(odd) {
+  background-color: #fbfbfb;
+  transition: background-color 60ms linear;
+}
+.selected {
+  background: #ddd;
+  transition: background-color 60ms linear;
+}
+.stocks-container {
+  max-height: 100px;
+  overflow-y: scroll;
+}
+.stock:nth-child(odd).selected {
+  background: #ddd;
+  transition: background-color 60ms linear;
+}
+.stockInfo {
+  padding: 5px 5px;
+
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.stocks-header {
+  background: #eaeaea;
+  text-align: center;
+  display: grid;
+  font-weight: bold;
+  height: 30px;
+  border-bottom: 1px solid #ddd;
+  grid-template-columns: 0.9fr 0.7fr 1fr 1.2fr 0.6fr 17px;
+}
+.portfolio-header-grid {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+  grid-column-gap: 10px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 0.6fr;
+  padding: 5px 10px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  /* background: #253137; */
+}
+.portfolio-footer-buttons {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: 1fr 2fr 1.5fr;
+}
+.portfolio-total-value {
+  padding: 10px 0;
+  margin: auto 15px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.stocks-info {
+  padding-top: 3px;
+  display: block;
+  /* border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd; */
+}
+.deleteButton {
+  margin-left: 60%;
+  width: 32px;
+}
+.button-graph {
+  width: 170px;
+}
+.modal {
+  position: absolute;
+}
+.legend-container {
+  width: 100%;
+  height: 30px;
+}
+.legend {
+  float: right;
+  padding: 0 5px;
+}
+.input-date {
+  width: 150px;
+  margin-right: 10px;
+}
+.add-stock-input {
+  float: right;
+  margin-bottom: 7px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
